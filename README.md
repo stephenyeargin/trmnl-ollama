@@ -1,5 +1,7 @@
 # Ollama for TRMNL
 
+[![Build and Release](https://github.com/stephenyeargin/trmnl-ollama/actions/workflows/build.yml/badge.svg)](https://github.com/stephenyeargin/trmnl-ollama/actions/workflows/build.yml)
+
 ![screenshot](assets/screenshot.png)
 
 ---

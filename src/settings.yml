@@ -25,7 +25,7 @@ custom_fields:
 - keyname: api_key
   field_type: password
   name: API Key
-  description: The API key for Ollama Cloud
+  description: The <a href="https://ollama.com/settings/keys" class="underline">API key</a> for Ollama Cloud
   placeholder: abcdef12345
 - keyname: prompt
   field_type: text
