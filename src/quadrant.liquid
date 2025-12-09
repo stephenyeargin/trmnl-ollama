@@ -1,0 +1,17 @@
+<div class="layout layout--row">
+  <div class="richtext gap--large">
+    <div class="content gap--medium" data-content-limiter="true">
+    {% if show_prompt == "true" %}
+      <span class="title title--small">{{ prompt }}</span>
+      <div class="divider"></div>
+    {% endif %}
+    {{ response | markdown_to_html }}
+    </div>
+  </div>
+</div>
+
+<div class="title_bar">
+  <img class="image image-stroke--medium" src="data:image/svg+xml;base64,{{ logo_svg | base64_encode }}" />
+  <span class="title">{{ trmnl.plugin_settings.instance_name }}</span>
+  <span class="instance"></span>
+</div>

@@ -1,0 +1,55 @@
+---
+strategy: polling
+no_screen_padding: 'no'
+dark_mode: 'no'
+static_data: ''
+polling_verb: post
+polling_url: https://ollama.com/api/generate
+polling_headers: content-type=application/json&authorization=Bearer {{ api_key }}
+polling_body: |
+  {
+    "model": "{{ model }}",
+    "system": "Today is {{ "now" | date: "%s" | plus: trmnl.user.utc_offset | date: "%c" }}. Generate a brief (<200 words) responses suitable for display on an e-ink screen.",
+    "prompt": "{{ prompt | escape }}",
+    "stream": false
+  }
+id: 193453
+custom_fields:
+- keyname: author_bio
+  name: About This Plugin
+  field_type: author_bio
+  description: Generate an LLM response from Ollama for a given prompt.
+  github_url: https://github.com/stephenyeargin/trmnl-ollama
+  learn_more_url: https://ollama.com
+  email_address: stephen@yearg.in
+- keyname: api_key
+  field_type: password
+  name: API Key
+  description: The API key for Ollama Cloud
+  placeholder: abcdef12345
+- keyname: prompt
+  field_type: text
+  name: Prompt
+  description: Write a prompt for Ollama to generate text content.
+  placeholder: Tell me a funny joke.
+- keyname: model
+  field_type: select
+  name: Prompt
+  description: The model to use for generating a response.
+  options:
+  - qwen3-vl:235b-cloud: qwen3-vl:235b-cloud
+  - gpt-oss:120b-cloud: gpt-oss:120b-cloud
+  - llama3.2:latest: llama3.2:latest
+  - deepseek-r1:8b: deepseek-r1:8b
+  - gemma3:4b: gemma3:4b
+  default: gpt-oss:120b-cloud
+- keyname: show_prompt
+  field_type: select
+  name: Show Prompt
+  description: Display the prompt above the response
+  options:
+  - 'Yes': true
+  - 'No': false
+  default: false
+name: Ollama
+refresh_interval: 1440
