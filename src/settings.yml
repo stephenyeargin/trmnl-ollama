@@ -34,7 +34,7 @@ custom_fields:
   placeholder: Tell me a funny joke.
 - keyname: model
   field_type: select
-  name: Prompt
+  name: Cloud Model
   description: The model to use for generating a response.
   options:
   - qwen3-vl:235b-cloud: qwen3-vl:235b-cloud
