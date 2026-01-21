@@ -1,6 +1,7 @@
 <div class="layout layout--row">
   <div class="richtext gap--large">
     <div class="content gap--medium" data-content-limiter="true">
+    {{ show_message_if_error }}
     {% if show_prompt == "true" %}
       <span class="title title--small">{{ prompt }}</span>
       <div class="divider"></div>

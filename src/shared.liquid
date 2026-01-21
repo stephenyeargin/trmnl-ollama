@@ -17,3 +17,11 @@
     word-break: break-word;
   }
 </style>
+
+{%- capture show_message_if_error %}
+  {% if response == blank %}
+  <div>
+    <span class="title">Unable to load response.</span>
+  </div>
+  {% endif %}
+{%- endcapture %}

@@ -5,6 +5,7 @@
       <span class="title title--small">{{ prompt }}</span>
       <div class="divider"></div>
     {% endif %}
+    {{ show_message_if_error }}
     {{ response | markdown_to_html }}
     </div>
   </div>
