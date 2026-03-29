@@ -11,13 +11,6 @@
 {% assign show_prompt = trmnl.plugin_settings.custom_fields_values.show_prompt %}
 {% assign prompt = trmnl.plugin_settings.custom_fields_values.prompt %}
 
-<!-- Polyfill until .clamp--nicely exists in V2 -->
-<style>
-  .trmnl .clamp--nicely {
-    word-break: break-word;
-  }
-</style>
-
 {%- capture show_message_if_error %}
   {% if response == blank %}
   <div>
