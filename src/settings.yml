@@ -18,6 +18,7 @@ custom_fields:
 - keyname: author_bio
   name: About This Plugin
   field_type: author_bio
+  category: productivity
   description: Generate an LLM response from Ollama for a given prompt.
   github_url: https://github.com/stephenyeargin/trmnl-ollama
   learn_more_url: https://ollama.com
