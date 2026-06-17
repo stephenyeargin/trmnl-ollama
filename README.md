@@ -1,6 +1,6 @@
 # Ollama for TRMNL
 
-[![Build and Release](https://github.com/stephenyeargin/trmnl-ollama/actions/workflows/build.yml/badge.svg)](https://github.com/stephenyeargin/trmnl-ollama/actions/workflows/build.yml)
+[![Build and Release](https://github.com/stephenyeargin/trmnl-ollama/actions/workflows/build.yml/badge.svg)](https://github.com/stephenyeargin/trmnl-ollama/actions/workflows/build.yml) [![TRMNL Recipe Connections](https://trmnl-badges.gohk.xyz/badge/connections?recipe=193453)](https://trmnl.com/recipes/193453)
 
 ![screenshot](assets/screenshot.png)
 
