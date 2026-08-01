@@ -53,5 +53,5 @@ custom_fields:
   - 'No': false
   default: false
 name: Ollama
-description: Run a prompt against an Ollama Cloud model
+description: Run a prompt against a cloud LLM
 refresh_interval: 1440
